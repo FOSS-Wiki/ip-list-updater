@@ -1,0 +1,8 @@
+{
+  "name": "ip-list-updater",
+  "main": "index.js",
+  "compatibility_date": "2026-10-28",
+  "triggers": {
+    "crons": ["0 0 * * *"] // UTC Midnight Daily
+  }
+}
