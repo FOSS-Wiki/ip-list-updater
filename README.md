@@ -9,6 +9,7 @@ The current sources are:
 |--------|-----|
 | BingBot | https://www.bing.com/toolbox/bingbot.json |
 | GoogleBot | https://developers.google.com/static/crawling/ipranges/common-crawlers.json |
+| DiscordBot | https://cdn.discordapp.com/ipranges/discord.json |
 
 The script runs daily at Midnight UTC, downloads the relevant IP json files then removes duplicate ranges and updates the desription field as appropriate. If the list is too short (e.g. if fetching of IPs fails), exits to not override the list with a malformed CSV. The script replaces the contents of the list through the Cloudflare API with the updated ranges.
 
