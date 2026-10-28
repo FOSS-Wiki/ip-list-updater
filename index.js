@@ -1,8 +1,4 @@
-const SOURCES = [
-  { url: "https://www.bing.com/toolbox/bingbot.json", label: "BingBot" },
-  { url: "https://cdn.discordapp.com/ipranges/discord.json", label: "DiscordBot" },
-  { url: "https://developers.google.com/static/crawling/ipranges/common-crawlers.json", label: "GoogleBot" }
-];
+import SOURCES from "./sources.json";
 
 // Extract the json files and output in the CSV format CF requires
 function extractEntries(json, label) {
@@ -22,7 +18,7 @@ export default {
       })
     );
 
-    // Removes duplicates and updates the description as appropiate
+    // Removes duplicates and updates the description as appropriate
     const seen = new Map();
     for (const entry of results.flat()) {
       if (seen.has(entry.ip)) {
@@ -38,7 +34,7 @@ export default {
 
     // Failsafe if fetching of IPs fails to not override the list with a malformed CSV
     if (items.length < 10) {
-      throw new Error(`List is too short, the IP list pull has likely failed.`);
+      throw new Error("List is too short, the IP list pull has likely failed.");
     }
 
     const res = await fetch(
