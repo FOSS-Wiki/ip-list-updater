@@ -20,6 +20,6 @@ Set these as Worker Secrets
 
 | Name | Description |
 |------|------------|
-| CF_API_TOKEN | Cloudflare API Token with permissions to edit the list |
+| API_TOKEN | Cloudflare API Token with permissions to edit the list |
 | ACCOUNT_ID | Your Cloudflare account ID |
 | LIST_ID | The ID of the trusted_crawlers list |

@@ -45,7 +45,7 @@ export default {
       {
         method: "PUT",
         headers: {
-          Authorization: `Bearer ${env.CF_TOKEN}`,
+          Authorization: `Bearer ${env.API_TOKEN}`,
           "Content-Type": "application/json"
         },
         body: JSON.stringify(items)
