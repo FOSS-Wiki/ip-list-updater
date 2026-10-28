@@ -1,7 +1,7 @@
 const SOURCES = [
   { url: "https://www.bing.com/toolbox/bingbot.json", label: "BingBot" },
-  { url: "https://developers.google.com/static/crawling/ipranges/common-crawlers.json", label: "GoogleBot" },
   { url: "https://cdn.discordapp.com/ipranges/discord.json", label: "DiscordBot" },
+  { url: "https://developers.google.com/static/crawling/ipranges/common-crawlers.json", label: "GoogleBot" }
 ];
 
 // Extract the json files and output in the CSV format CF requires
